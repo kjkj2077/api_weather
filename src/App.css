@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+body{
+  background : url(https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Weather-Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
+  justify-content: center;/* 가로가운데 정렬 */
+  align-items: center; /* 세로가운데 정렬 */
+  height: 100vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.weather-box{
+  border: 3px solid black;
+  padding: 50px;
+  border-radius: 30px;
+  background-color: antiquewhite;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#search{
+  height: 38px;
+  margin-right: 10px;
+  border-radius: 12px;
+  margin-top: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#button{
+  margin: 5px;
 }
