@@ -48,15 +48,11 @@ function App() {
   }
   const getWeatherBySearch = async (search) => {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=2bbfca26b218d02919ec5a1c0f56539a`
-    if (weather.cod == 404) {
-      getCurrentLocation()
-    } else {
       setLoading(true)
       let resopon = await fetch(url) //fetch하는걸 기다려주셈
       let data = await resopon.json();
       setLoading(false)
       setWeather(data)
-    }
   }
   useEffect(() => { //렌더후 바로실행 
     if (city == "") {
